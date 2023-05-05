@@ -1,0 +1,73 @@
+body {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  box-shadow: none !important;
+}
+
+.navbar-menu>a {
+  transition: color .3s ease-in-out !important;
+}
+
+.navbar-menu>a:hover,
+.navbar-menu>a:active {
+  color: #3b71ca !important;
+}
+
+.social-link {
+  transition: color .3s ease-in-out !important;
+}
+
+.social-link:hover,
+.social-link:active {
+  color: #3b71ca !important;
+}
+
+.carousel-caption {
+  color: #332d2d;
+  top: 1.25rem;
+}
+
+.carousel-item {
+  background-color: #f9f9f9 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.carousel-item img {
+  margin-top: 150px;
+}
+
+.form-control:focus {
+  border-color: #4f4f4f !important;
+  box-shadow: inset 0 0 0 1px #4f4f4f !important;
+}
+
+.card-img {
+  margin-top: 250px;
+  margin-right: 0 !important;
+}
+
+/* media */
+
+@media (max-width: 991.98px) {
+  .carousel-item img {
+    margin-top: 80px;
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .carousel-item img {
+    margin-top: 0;
+    width: 100% !important;
+  }
+}
