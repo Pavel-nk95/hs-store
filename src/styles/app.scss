@@ -1,5 +1,6 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -56,7 +57,48 @@ main {
   margin-right: 0 !important;
 }
 
+.card-color-active {
+  border: 3px double #8c8c8c;
+}
+
+.card-colors {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.card-color-item {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.card-color-active {
+  border: 2px solid #000000;
+}
+
+.card-img-box img {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.filter-item {
+  margin-top: 0.5rem;
+}
+
+.clear-item {
+  margin-top: 0.5rem;
+}
+
 /* media */
+
+@media (max-width: 1200px) {
+  .news-img {
+    display: none;
+    visibility: hidden;
+  }
+}
 
 @media (max-width: 991.98px) {
   .carousel-item img {
