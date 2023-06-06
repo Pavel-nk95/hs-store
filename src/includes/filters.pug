@@ -1,0 +1,69 @@
+.container
+  .filters-inner
+    .row
+      .col.d-flex.flex-wrap
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Цена
+            include ./price-select.pug
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Операционная система
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') 720x1440 Мп
+              li
+                a.dropdown-item(href='#') 2160x1080, FHD+, Мп
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Камера
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') 13.0 Мп
+              li
+                a.dropdown-item(href='#') 16.0 Мп
+              li
+                a.dropdown-item(href='#') 20.0 Мп
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Встроенная память
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') 64 ГБ
+              li
+                a.dropdown-item(href='#') 128 ГБ
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Оперативная память
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') 4 ГБ
+              li
+                a.dropdown-item(href='#') 6 ГБ
+              li
+                a.dropdown-item(href='#') 8 ГБ
+        .filter-item.me-2
+          .btn-group.shadow-2
+            button.btn.btn-sm.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              | Емкость аккумулятора
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') 3000 мАч
+              li
+                a.dropdown-item(href='#') 5000 мАч
+              li
+                a.dropdown-item(href='#') 6000 мАч
+    .row.mt-3
+      .col.d-flex.flex-wrap
+        button.btn.btn-light.btn-rounded.btn-sm(data-mdb-ripple-color="dark") Встроенная память: 64 Гб
+          i.fas.fa-circle-minus.ms-2
+        button.btn.btn-light.btn-rounded.btn-sm(data-mdb-ripple-color="dark") Емкость аккумулятора: 3000 мАч
+          i.fas.fa-circle-minus.ms-2
+        button.btn.btn-light.btn-rounded.btn-sm(data-mdb-ripple-color="dark") Очистить все
+          i.fas.fa-circle-minus.ms-2
+

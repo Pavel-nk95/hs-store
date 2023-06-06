@@ -1,0 +1,88 @@
+body
+  font-family: 'Roboto', sans-serif !important
+  font-weight: 300
+  display: flex
+  flex-direction: column
+  height: 100vh
+
+main
+  flex: 1
+
+.navbar
+  box-shadow: none !important
+
+.navbar-menu > a
+  transition: color .3s ease-in-out !important
+
+.navbar-menu > a:hover,
+.navbar-menu > a:active
+  color: #3b71ca !important
+
+.social-link
+  transition: color .3s ease-in-out !important
+
+.social-link:hover,
+.social-link:active
+  color: #3b71ca !important
+
+.carousel-caption
+  color: #332d2d
+  top: 1.25rem
+
+.carousel-item
+  background-color: #f9f9f9 !important
+  display: flex !important
+  justify-content: center !important
+
+.carousel-item img
+  margin-top: 150px
+
+.form-control:focus
+  border-color: #4f4f4f !important
+  box-shadow: inset 0 0 0 1px #4f4f4f !important
+
+.card-img
+  margin-top: 250px
+  margin-right: 0 !important
+
+.card-color-active
+  border: 3px double #8c8c8c
+
+.card-colors
+  list-style: none
+  display: flex
+  padding-left: 0
+
+.card-color-item
+  width: 18px
+  height: 18px
+  border-radius: 50%
+
+.card-color-active
+  border: 2px solid #000000
+
+.card-img-box img
+  width: 200px
+  margin: 0 auto
+  display: block
+
+.filter-item
+  margin-top: 0.5rem
+
+.clear-item
+  margin-top: 0.5rem
+
+@media (max-width: 1200px)
+  .news-img
+    display: none
+    visibility: hidden
+
+@media (max-width: 991px)
+  .carousel-item img
+    margin-top: 80px
+    width: 75% !important
+
+@media (max-width: 575px)
+  .carousel-item img
+    margin-top: 0
+    width: 100% !important

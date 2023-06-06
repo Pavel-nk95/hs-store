@@ -1,0 +1,53 @@
+//- Header component
+header.header.bg-white.border-bottom
+  .container
+    nav.navbar.navbar-expand-xl.py-3.bg-white
+      .container-fluid
+        button.navbar-toggler(type='button' data-mdb-toggle='collapse' data-mdb-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          i.fas.fa-bars
+        #navbarSupportedContent.collapse.navbar-collapse
+          a.navbar-brand.mt-2.mt-lg-0(href='./index.html')
+            img(src='./img/icons/logo.svg' alt='highscreen logo' loading='lazy' height='25')
+          ul.navbar-nav.justify-content-center.mb-2.mb-lg-0.w-100
+            li.nav-item
+              a.nav-link(href='#') О бренде
+            li.nav-item
+              a.nav-link(href='./catalog.html' target='_blank') Каталог
+            li.nav-item
+              a.nav-link(href='#') Смартфоны
+            li.nav-item
+              a.nav-link(href='#') КПК
+            li.nav-item
+              a.nav-link(href='#') Планшеты
+            li.nav-item
+              a.nav-link(href='#') Доставка
+            li.nav-item
+              a.nav-link(href='#') Акции
+            li.nav-item
+              a.nav-link(href='#') Где купить?
+        .navbar-menu.d-flex.align-items-center
+          a.text-reset.me-3(href='#')
+            <span class="badge badge-pill bg-danger">1</span>
+            i.fas.fa-md.fa-shopping-cart
+          a.text-reset.me-3(href='#')
+            i.fas.fa-md.fa-heart
+          a.text-reset.me-3(href='#')
+            i.fas.fa-md.fa-magnifying-glass
+          .me-3.me-lg-0.dropdown
+            a#navbarDropdown.dropdown-toggle(href='#' role='button' data-mdb-toggle='dropdown' aria-expanded='false')
+              i.fas.fa-md.fa-user
+            ul.dropdown-menu(aria-labelledby='navbarDropdown' style='\
+            position: absolute;\
+            inset: 0px auto auto 0px;\
+            margin: 0px;\
+            transform: translate(0px, 60px);\
+            ' data-popper-placement='bottom-start' data-mdb-popper='null')
+              li
+                a.dropdown-item(href='#') Вход
+              li
+                a.dropdown-item(href='#') Регистрация
+              li
+                hr.dropdown-divider
+              li
+                a.dropdown-item(href='#') Личный кабинет
+  //- Header component: END

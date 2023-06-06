@@ -1,0 +1,72 @@
+extends ./layout.pug
+block content
+  include ./includes/breadcrumbs.pug
+    //- Pills component:
+  section.pills
+    .container
+      .row
+        .col-10
+          ul#ex1.nav.nav-tabs.mb-3(role='tablist')
+            li.nav-item(role='presentation')
+              a#ex1-tab-1.nav-link.active(data-mdb-toggle='tab' href='#ex1-tabs-1' role='tab' aria-controls='ex1-tabs-1' aria-selected='true') Все
+            li.nav-item(role='presentation')
+              a#ex1-tab-2.nav-link(data-mdb-toggle='tab' href='#ex1-tabs-2' role='tab' aria-controls='ex1-tabs-2' aria-selected='false') Смартфоны
+            li.nav-item(role='presentation')
+              a#ex1-tab-3.nav-link(data-mdb-toggle='tab' href='#ex1-tabs-3' role='tab' aria-controls='ex1-tabs-3' aria-selected='false') Планшеты
+            li.nav-item(role='presentation')
+              a#ex1-tab-4.nav-link(data-mdb-toggle='tab' href='#ex1-tabs-4' role='tab' aria-controls='ex1-tabs-4' aria-selected='false') КПК
+        .col-2
+          p.small.text-end.mt-3 8 товаров
+    //- Pills component: END
+  section.filters.mb-2
+    include ./includes/filters.pug
+  section.tags.mb-2
+  section.cards.mb-4
+    .container.mt-4
+      #ex1-content.tab-content
+        #ex1-tabs-1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='ex1-tab-1')
+          h2.h5.mb-0 Смартфоны:
+          .row.mb-4
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+          h2.h5.mb-0 Планшеты:
+          .row.mb-4
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+          h2.h5.mb-0 КПК:
+          .row.mb-4
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+        #ex1-tabs-2.tab-pane.fade(role='tabpanel' aria-labelledby='ex1-tab-2')
+          h2.h5.mb-0 Смартфоны:
+          .row
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+            .col-lg-6.col-xl-4.mt-4
+              include ./includes/card.pug
+        #ex1-tabs-3.tab-pane.fade(role='tabpanel' aria-labelledby='ex1-tab-3') Tab 3 content
+        #ex1-tabs-4.tab-pane.fade(role='tabpanel' aria-labelledby='ex1-tab-4') Tab 4 content
+  section.banner
+    .container
+      hr.hr.hr-blurry
+      img.img-fluid(src='./img//banner.jpg' alt='Wild Landscape')
+      hr.hr.hr-blurry
+  section.cards.cards-popular
+    .container
+      h2.h5.mb-0 Популярные товары:
+      .row.mb-4
+        .col-lg-6.col-xl-4.mt-4
+          include ./includes/card.pug
+        .col-lg-6.col-xl-4.mt-4
+          include ./includes/card.pug
+  include ./includes/desc.pug

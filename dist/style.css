@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 300;
   display: flex;
   flex-direction: column;
@@ -91,22 +91,21 @@ main {
   margin-top: 0.5rem;
 }
 
-/* media */
 @media (max-width: 1200px) {
   .news-img {
     display: none;
     visibility: hidden;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
   .carousel-item img {
     margin-top: 80px;
     width: 75% !important;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   .carousel-item img {
     margin-top: 0;
     width: 100% !important;
   }
-}/*# sourceMappingURL=app.css.map */
+}

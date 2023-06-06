@@ -1,0 +1,26 @@
+//- Card
+.card.shadow-2.position-relative(style='background-color: #f5f5f5;')
+  .card-nav.flex-column.position-absolute.d-flex.mt-3.ms-3
+    button.btn.btn-outline-danger.btn-floating.mb-2(type='button' data-mdb-ripple-color='dark')
+      i.fas.fa-heart.fa-md
+    button.btn.btn-outline-success.btn-floating.mb-2(type='button' data-mdb-ripple-color='dark')
+      i.fas.fa-list-check.fa-md
+  .card-img-box.mt-4
+    img.card-img-top(src='./img//card-img-5.png' alt='Chicago Skyscrapers')
+  .card-body
+    h5.card-titl.mb-2 Highscreen Max 3
+    p.text.mb-2 FullView-экран | Камера 64 Мп
+    .mb-2
+      ul.card-colors
+        li.card-color-item.me-2(style='background-color: #3b5998;')
+        li.card-color-item.me-2(style='background-color: #000000;')
+        li.card-color-item.me-2.card-color-active(style='background-color: #ffffff;')
+    p.card-price.h5.fw-bold.mb-3
+      | 12 990 р.
+      del.h6.text-muted.ms-2 10 990 р.
+    .d-flex
+      button.btn.btn-primary.me-4(href='#') Купить
+      button.btn.btn-tertiary(type='button' data-mdb-ripple-color='light')
+        | Подробнее
+        i.fas.fa-angle-right.ms-2
+//- Card: END
