@@ -1,0 +1,13 @@
+.dropdown-menu(style='width: 280px')
+  form.px-4.py-3
+    .row
+      .col
+        .form-outline.mb-4
+          input#priceFrom.form-control(type='number')
+          label.form-label(for='priceFrom') Цена от:
+      .col
+        .form-outline.mb-4
+          input#priceUp.form-control(type='number')
+          label.form-label(for='priceUp') Цена до:
+    .dropdown-divider
+    button.btn.btn-primary.btn-block(type='submit') Применить

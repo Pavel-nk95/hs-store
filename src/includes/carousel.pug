@@ -1,0 +1,30 @@
+//- Carousel component
+section.carousel-block.mb-4
+  #carouselMaterialStyle.carousel.slide.carousel-fade(data-mdb-ride='carousel')
+    .carousel-indicators
+      button.active(type='button' data-mdb-target='#carouselMaterialStyle' data-mdb-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-mdb-target='#carouselMaterialStyle' data-mdb-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-mdb-target='#carouselMaterialStyle' data-mdb-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-50(src='./img/slide_img_1.png' alt='Sunset Over the City')
+        .carousel-caption.d-none.d-md-block
+          h5.display-5 Power Five Max 2
+          p.lead Мощный флагманский смартфон с ёмким аккумулятором
+      .carousel-item
+        img.d-block.w-50(src='./img/slide_img_2.png' alt='Canyon at Nigh')
+        .carousel-caption.d-none.d-md-block
+          h5.display-5 Power Five Max 3
+          p.lead Мощный флагманский смартфон с ёмким аккумулятором
+      .carousel-item
+        img.d-block.w-50(src='./img/slide_img_3.png' alt='Cliff Above a Stormy Sea')
+        .carousel-caption.d-none.d-md-block
+          h5.display-5 Power Five Max 4
+          p.lead Мощный флагманский смартфон с ёмким аккумулятором
+    button.carousel-control-prev(type='button' data-mdb-target='#carouselMaterialStyle' data-mdb-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Назад
+    button.carousel-control-next(type='button' data-mdb-target='#carouselMaterialStyle' data-mdb-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Вперёд
+//- Carousel component: END

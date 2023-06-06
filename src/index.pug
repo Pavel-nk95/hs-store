@@ -1,0 +1,87 @@
+extends ./layout.pug
+
+block content
+  include ./includes/carousel.pug
+  section.main-products
+    .container
+      .row
+        .col-lg-6.mb-4
+          .card.text-dark
+            img.card-img.w-50.mx-auto(src='./img/card-img-3.png' alt='фото планшета')
+            .card-img-overlay
+              h5.card-title Смартфоны
+              p.card-text Каталог смартфонов 2022 - 2023 г.
+              p.card-text
+                small.text-muted Обновлено 2 дня назад
+              button.btn.btn-info(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+        .col-lg-6.mb-4
+          .card.text-dark
+            img.card-img.w-50.mx-auto(src='./img/card-img-4.png' alt='фото смартфона')
+            .card-img-overlay
+              h5.card-title Планшеты
+              p.card-text
+                strong Акция:&nbsp;
+                | специальная комплектация с картой памяти на 128 GB в комплекте
+              p.card-text
+                small.text-muted Обновлено 2 дня назад
+              button.btn.btn-danger(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+  section.info-block.info-block--left.mb-4
+    .container
+      .card.w-100
+        .row.g-0
+          .col-md-6
+            img.img-fluid.rounded-start(src='./img/background-img-1.png' alt='Trendy Pants and Shoes')
+          .col-md-6
+            .card-body
+              h5.card-title Смартфон Highscreen Explorer
+              p.card-text Новый мощный смартфон с потрясающим чётким OLED экраном. Устройство работает на последней версии Android 14
+              p.card-text
+                small.text-muted Обновлено 2 дня назад
+              button.btn.btn-outline-dark(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+  section.info-block.info-block--right.mb-4
+    .container
+      .card.w-100
+        .row.g-0
+          .col-md-6
+            .card-body
+              h5.card-title Смартфон Highscreen Poepkel
+              p.card-text Телефон Хайскрин - ваш надёжный помощник: высочайшая скорость работы, защита корпуса от влаги, камера высокой детализации 50 Мп
+              p.card-text
+                small.text-muted Обновлено 3 дня назад
+              button.btn.btn-outline-dark(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+          .col-md-6
+            img.img-fluid.rounded-end(src='./img/background-img-2.png' alt='Trendy Pants and Shoes')
+  section.accessories
+    .container
+      .row
+        .col-lg-4.col-sm-6.mb-4
+          .card
+            img.card-img-top(src='./img/card-img-1.png' alt='Зарядные устройства')
+            .card-body
+              h5.card-title Зарядные устройства
+              p.card-text Акссессуары
+              button.btn.btn-dark(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+        .col-lg-4.col-sm-6.mb-4
+          .card
+            img.card-img-top(src='./img/card-img-1.png' alt='чехлы')
+            .card-body
+              h5.card-title Карты памяти
+              p.card-text Акссессуары
+              button.btn.btn-danger(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+        .col-lg-4.col-sm-6.mb-4
+          .card
+            img.card-img-top(src='./img/card-img-1.png' alt='наушники')
+            .card-body
+              h5.card-title Чехлы
+              p.card-text Акссессуары
+              button.btn.btn-info(type='button' data-mdb-ripple-color='dark')
+                | Подробнее...
+  include ./includes/news.pug
+  include ./includes/desc.pug
+

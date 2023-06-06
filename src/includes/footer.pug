@@ -1,0 +1,87 @@
+//- Footer component
+footer.footer.text-center.text-lg-start.bg-white.text-muted
+  .container.d-flex.justify-content-center.justify-content-lg-between.p-4.border-bottom
+    .me-5.d-none.d-lg-block
+      span Мы в социальных сетях
+    .social
+      a.me-4.text-reset.social-link(href='')
+        i.fab.fa-vk.fa-xl
+      a.me-4.text-reset.social-link(href='')
+        i.fab.fa-xl.fa-odnoklassniki-square
+      a.me-4.text-reset.social-link(href='')
+        i.fab.fa-xl.fa-telegram
+  .container
+    .container.text-center.text-md-start.mt-5
+      .row.mt-3
+        .col-md-12.col-lg-12.col-xl-3.mx-auto.mb-4
+          h6.text-uppercase.fw-bold.mb-4
+            img(src='./img/icons/logo.svg' alt='highscreen logo' loading='lazy' height='25')
+          p
+            | Бренд Highscreen начал своё развитие в России с 2003 года. Первые смартфоны Хайскрин
+            | появились на российском рынке в 2009 году. При этом смартфоны марки Highscreen
+            | всегда выделялись среди конкурентов за счёт выигрышной комбинации цены, качества и
+            | функциональности.
+        .col-md-4.col-lg-4.col-xl-2.mx-auto.mb-4
+          h6.text-uppercase.fw-bold.mb-4
+            | Информация
+          p
+            a.text-reset(href='#!') Доставка и оплата
+          p
+            a.text-reset(href='#!') Гарантия
+          p
+            a.text-reset(href='#!') Сервисное обсуживание
+          p
+            a.text-reset(href='#!') Вопрос-ответ
+          p
+            a.text-reset(href='#!') Оферта
+          p
+            a.text-reset(href='#!') Политика конфеденциальности
+          p
+            a.text-reset(href='#!') Новости
+          p
+            a.text-reset(href='#!') Статьи
+        .col-md-4.col-lg-4.col-xl-2.mx-auto.mb-4
+          h6.text-uppercase.fw-bold.mb-4
+            | Магазин Хайскрин
+          p
+            a.text-reset(href='#!') О бренде Хайскрин
+          p
+            a.text-reset(href='#!') Каталог
+          p
+            a.text-reset(href='#!') Смартфоны
+          p
+            a.text-reset(href='#!') КПК
+          p
+            a.text-reset(href='#!') Планшеты
+          p
+            a.text-reset(href='#!') Акции
+        .col-md-4.col-lg-4.col-xl-3.mx-auto.mb-md-0.mb-4
+          h6.text-uppercase.fw-bold.mb-4 Контакты
+          p
+            i.fas.fa-home.me-3.text-secondary
+            | Адрес: 109341, г.Москва, ул.Перерва, дом 52
+            | эт.1, пом.II, ком.1-2  (м.Братиславская)
+          p
+            i.fas.fa-envelope.me-3.text-secondary
+            | e-mail: highscreen@store.ru
+          p
+            i.fas.fa-phone.me-3.text-secondary
+            | телефон: 8-900-001-00-00
+          button.btn.btn-tertiary(type='button' data-mdb-ripple-color='light')
+            | Оставить обратную связь
+            i.fas.fa-angle-right.ms-1
+  .container
+    form
+      .row.d-flex.justify-content-center.mb-3
+        .col-auto
+          p.mt-1 Подпишитесь на рассылку:
+        .col-md-5.col-12
+          .form.mb-4
+            input#sendForm.form-control(type='email' placeholder='Введите ваш e-mail:')
+        .col-auto
+          button.btn.btn-dark(type='submit')
+            | Отправить
+  .text-center.p-4.container-fluid(style='background-color: rgba(0, 0, 0, 0.025);')
+    | © 2023 Официальный интернет-магазин
+    a.text-reset.fw-bold(href='https://mdbootstrap.com/') &nbsp;Highscreen
+//- Footer component: END
